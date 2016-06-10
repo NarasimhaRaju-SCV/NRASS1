@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>TestNG:  Perfecto Assignment 1 Compare stocks</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Perfecto Assignment 1 Compare stocks</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jun 10 16:02:20 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>535 seconds (535102 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Test.MainTest.compareNYSEStocks()'><b>compareNYSEStocks</b><br>Test class: Test.MainTest<br>Parameters: NYSE:IBM, NYSE:ACCO<br/>
+<a href="#Output-1346799731" onClick='toggleBox("Output-1346799731", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1346799731" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1346799731">
+====  For Company<'International Business Machines Corp.  '> - StockCode<'NYSE:IBM'>, Current Price <'153.42'> is 11.72% lower than the 52 week high<'173.78'> and 31.25% higher than the 52 week low<'116.90'>.<br/>
+====  Company< Name: 'International Business Machines Corp.  ', StockCode: 'NYSE:IBM', EPS: '13.28'> having higher EPS than Company< Name: 'ACCO Brands Corporation  ', StockCode: 'NYSE:ACCO', EPS: '0.89'><br/>
+</div>
+</td>
+<td></td>
+<td>42</td>
+<td>Test.MainTest@5c7fa833</td></tr>
+<tr>
+<td title='Test.MainTest.compareNYSEStocks()'><b>compareNYSEStocks</b><br>Test class: Test.MainTest<br>Parameters: NYSE:FBC, NYSE:HCA<br/>
+<a href="#Output-1937380187" onClick='toggleBox("Output-1937380187", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1937380187" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1937380187">
+====  For Company<'Flagstar Bancorp Inc  '> - StockCode<'NYSE:FBC'>, Current Price <'24.08'> is 3.88% lower than the 52 week high<'25.05'> and 39.6% higher than the 52 week low<'17.25'>.<br/>
+====  Company< Name: 'HCA Holdings Inc  ', StockCode: 'NYSE:HCA', EPS: '5.32'> having higher EPS than Company< Name: 'Flagstar Bancorp Inc  ', StockCode: 'NYSE:FBC', EPS: '2.34'><br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>Test.MainTest@5c7fa833</td></tr>
+<tr>
+<td title='Test.MainTest.compareNYSEStocks()'><b>compareNYSEStocks</b><br>Test class: Test.MainTest<br>Parameters: NYSE:OCIP, NYSE:OFG<br/>
+<a href="#Output-1807623441" onClick='toggleBox("Output-1807623441", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1807623441" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1807623441">
+====  For Company<'OCI Partners LP  '> - StockCode<'NYSE:OCIP'>, Current Price <'7.99'> is 57.5% lower than the 52 week high<'18.80'> and 43.45% higher than the 52 week low<'5.57'>.<br/>
+====  Company< Name: 'OCI Partners LP  ', StockCode: 'NYSE:OCIP', EPS: '0.52'> having higher EPS than Company< Name: 'OFG Bancorp  ', StockCode: 'NYSE:OFG', EPS: '0.02'><br/>
+</div>
+</td>
+<td></td>
+<td>43</td>
+<td>Test.MainTest@5c7fa833</td></tr>
+</table><p>
+</body>
+</html>
